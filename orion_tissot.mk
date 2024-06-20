@@ -15,9 +15,18 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_IS_AB := true
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
+# OrionOS flag's
+ORION_MAINTAINER := RomiYusnandar
+ORION_MAINTAINER_LINK := https://t.me/romiyusna
+ORION_GAPPS := false
+TARGET_ENABLE_BLUR := true
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := lineage_tissot
+PRODUCT_NAME := orion_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1

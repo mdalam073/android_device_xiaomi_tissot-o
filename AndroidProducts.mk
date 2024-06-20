@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_tissot.mk
+    $(LOCAL_DIR)/orion_tissot.mk
+
+COMMON_LUNCH_CHOICES := \
+    orion_tissot-user \
+    orion_tissot-userdebug \
+    orion_tissot-eng
