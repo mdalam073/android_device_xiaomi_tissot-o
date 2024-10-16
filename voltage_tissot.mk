@@ -9,16 +9,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Inherit from tissot device
 TARGET_IS_AB := true
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
-# OrionOS flag's
-ORION_MAINTAINER := RomiYusnandar
-ORION_MAINTAINER_LINK := https://t.me/romiyusna
-ORION_GAPPS := true
+# VoltageOS flag's
+VOLTAGE_MAINTAINER := Md Alam
+VOLTAGE_BUILD_TYPE := UNOFFICIAL
 TARGET_ENABLE_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
@@ -28,7 +27,7 @@ TARGET_SUPPORTS_64_BIT_APPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := orion_tissot
+PRODUCT_NAME := voltage_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
