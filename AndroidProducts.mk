@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/orion_tissot.mk
+    $(LOCAL_DIR)/voltage_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    orion_tissot-user \
-    orion_tissot-userdebug \
-    orion_tissot-eng
+    voltage_tissot-user \
+    voltage_tissot-userdebug \
+    voltage_tissot-eng
